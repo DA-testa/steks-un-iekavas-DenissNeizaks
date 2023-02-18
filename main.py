@@ -14,6 +14,7 @@ def find_mismatch(text):
     for i, next in enumerate(text):
         if next in "([{":
             # Process opening bracket, write your code here
+            opening_brackets_stack.append(text[1])
             pass
 
         if next in ")]}":
